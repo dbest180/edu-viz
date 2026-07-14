@@ -1,0 +1,21 @@
+student_id,name,gender,form_class,score,band
+1,Zoe Smith,Female,9B,89,Distinction
+2,Ava Williams,Male,9A,61,Merit
+3,Troy Miller,Male,9A,51,Pass
+4,Sam Brown,Male,9A,13,Needs Support
+5,Joy Brown,Female,9B,62,Merit
+6,Leo Martinez,Female,9A,39,Needs Support
+7,Lily Miller,Female,10A,80,Distinction
+8,Kai Brown,Female,9A,76,Merit
+9,Sam Miller,Male,10A,72,Merit
+10,Eva Martinez,Female,9A,42,Pass
+11,Leo Rodriguez,Male,10B,65,Merit
+12,Sam Rodriguez,Female,10A,77,Merit
+13,Troy Brown,Male,9A,84,Distinction
+14,Ava Jones,Male,9B,98,Distinction
+15,Zoe Miller,Female,10B,96,Distinction
+16,Eva Williams,Female,10A,41,Pass
+17,Noah Jones,Male,9B,43,Pass
+18,Joy Brown,Male,10B,48,Pass
+19,Max Jones,Male,10A,73,Merit
+20,Maya Brown,Male,10A,71,Merit

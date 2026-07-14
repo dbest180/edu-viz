@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Zoe Smith",
+        "gender": "Female",
+        "form_class": "9B"
+    },
+    {
+        "id": 2,
+        "name": "Ava Williams",
+        "gender": "Male",
+        "form_class": "9A"
+    },
+    {
+        "id": 3,
+        "name": "Troy Miller",
+        "gender": "Male",
+        "form_class": "9A"
+    },
+    {
+        "id": 4,
+        "name": "Sam Brown",
+        "gender": "Male",
+        "form_class": "9A"
+    },
+    {
+        "id": 5,
+        "name": "Joy Brown",
+        "gender": "Female",
+        "form_class": "9B"
+    },
+    {
+        "id": 6,
+        "name": "Leo Martinez",
+        "gender": "Female",
+        "form_class": "9A"
+    },
+    {
+        "id": 7,
+        "name": "Lily Miller",
+        "gender": "Female",
+        "form_class": "10A"
+    },
+    {
+        "id": 8,
+        "name": "Kai Brown",
+        "gender": "Female",
+        "form_class": "9A"
+    },
+    {
+        "id": 9,
+        "name": "Sam Miller",
+        "gender": "Male",
+        "form_class": "10A"
+    },
+    {
+        "id": 10,
+        "name": "Eva Martinez",
+        "gender": "Female",
+        "form_class": "9A"
+    },
+    {
+        "id": 11,
+        "name": "Leo Rodriguez",
+        "gender": "Male",
+        "form_class": "10B"
+    },
+    {
+        "id": 12,
+        "name": "Sam Rodriguez",
+        "gender": "Female",
+        "form_class": "10A"
+    },
+    {
+        "id": 13,
+        "name": "Troy Brown",
+        "gender": "Male",
+        "form_class": "9A"
+    },
+    {
+        "id": 14,
+        "name": "Ava Jones",
+        "gender": "Male",
+        "form_class": "9B"
+    },
+    {
+        "id": 15,
+        "name": "Zoe Miller",
+        "gender": "Female",
+        "form_class": "10B"
+    },
+    {
+        "id": 16,
+        "name": "Eva Williams",
+        "gender": "Female",
+        "form_class": "10A"
+    },
+    {
+        "id": 17,
+        "name": "Noah Jones",
+        "gender": "Male",
+        "form_class": "9B"
+    },
+    {
+        "id": 18,
+        "name": "Joy Brown",
+        "gender": "Male",
+        "form_class": "10B"
+    },
+    {
+        "id": 19,
+        "name": "Max Jones",
+        "gender": "Male",
+        "form_class": "10A"
+    },
+    {
+        "id": 20,
+        "name": "Maya Brown",
+        "gender": "Male",
+        "form_class": "10A"
+    }
+]
