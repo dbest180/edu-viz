@@ -4,7 +4,7 @@ window.EduViz = window.EduViz || {};
 window.EduViz.DataLoader = (function() {
     const BASE_URL = 'data-generator/output';
     const SUBJECTS = ['mathematics', 'english', 'business-studies', 'science', 'history'];
-    
+
     // In-memory cache
     let cache = {};
 
@@ -20,7 +20,7 @@ window.EduViz.DataLoader = (function() {
     async function loadAllData() {
         const promises = SUBJECTS.map(sub => fetchJSON(`${sub}.json`));
         const results = await Promise.all(promises);
-        
+
         // Combine into a single map for the landing page
         const studentMap = {};
         results.forEach((subjectData, index) => {

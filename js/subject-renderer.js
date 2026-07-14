@@ -10,7 +10,7 @@ window.EduViz.SubjectRenderer = (function() {
         const highest = Math.max(...data.map(s => s.score));
         const passing = data.filter(s => s.score >= 40).length;
         const passRate = ((passing / total) * 100).toFixed(0);
-        const topStudent = data.find(s => s.score === highest).name;
+        const topStudent = data.find(s => s.score === highest)?.name || 'N/A';
 
         const dashboard = document.getElementById('stats-dashboard');
         dashboard.innerHTML = `
@@ -27,10 +27,14 @@ window.EduViz.SubjectRenderer = (function() {
     }
 
     function updateTableDOM() {
-        const searchTerm = document.getElementById('table-search').value.toLowerCase();
+        const tableBody = document.getElementById('table-body');
+        if (!tableBody) return;
         
-        let filtered = currentData.filter(s => 
-            s.name.toLowerCase().includes(searchTerm) || 
+        const searchInput = document.getElementById('table-search');
+        const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+
+        let filtered = currentData.filter(s =>
+            s.name.toLowerCase().includes(searchTerm) ||
             s.form_class.toLowerCase().includes(searchTerm)
         );
 
@@ -39,14 +43,13 @@ window.EduViz.SubjectRenderer = (function() {
             let valB = b[currentSort.key];
             if (typeof valA === 'string') valA = valA.toLowerCase();
             if (typeof valB === 'string') valB = valB.toLowerCase();
-            
+
             if (valA < valB) return currentSort.dir === 'asc' ? -1 : 1;
             if (valA > valB) return currentSort.dir === 'asc' ? 1 : -1;
             return 0;
         });
 
-        const tbody = document.getElementById('table-body');
-        tbody.innerHTML = filtered.map(s => `
+        tableBody.innerHTML = filtered.map(s => `
             <tr class="row-${s.band.toLowerCase().replace(' ', '-')}">
                 <td>${s.name}</td>
                 <td>${s.form_class}</td>
@@ -70,7 +73,10 @@ window.EduViz.SubjectRenderer = (function() {
             });
         });
 
-        document.getElementById('table-search').addEventListener('input', updateTableDOM);
+        const searchInput = document.getElementById('table-search');
+        if (searchInput) {
+            searchInput.addEventListener('input', updateTableDOM);
+        }
     }
 
     return { renderStats, renderTable, initTableInteractions };

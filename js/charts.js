@@ -18,10 +18,10 @@ window.EduViz.Charts = (function() {
 
     function renderBarChart(canvasId, data) {
         const ctx = document.getElementById(canvasId).getContext('2d');
-        
+
         // Sort data by score descending
         const sorted = [...data].sort((a, b) => b.score - a.score);
-        
+
         new Chart(ctx, {
             type: 'bar',
             data: {

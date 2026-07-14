@@ -18,8 +18,8 @@ window.EduViz.App = (function() {
         const searchInput = document.getElementById('student-search');
 
         function renderCards(filter = '') {
-            const filtered = students.filter(s => 
-                s.name.toLowerCase().includes(filter) || 
+            const filtered = students.filter(s =>
+                s.name.toLowerCase().includes(filter) ||
                 s.form_class.toLowerCase().includes(filter)
             );
 
@@ -50,23 +50,36 @@ window.EduViz.App = (function() {
     async function initSubjectPage() {
         const params = new URLSearchParams(window.location.search);
         const subjectKey = params.get('subject') || 'mathematics';
-        
+
+        // Validate subject key against known subjects
+        if (!DataLoader.SUBJECTS.includes(subjectKey)) {
+            document.getElementById('subject-title').textContent = 'Subject Not Found';
+            document.title = 'EduViz - Error';
+            return;
+        }
+
         const prettyName = subjectKey.charAt(0).toUpperCase() + subjectKey.slice(1).replace('-', ' ');
         document.getElementById('subject-title').textContent = `${prettyName} Results`;
         document.title = `EduViz - ${prettyName}`;
 
-        const data = await DataLoader.loadSubjectData(subjectKey);
-        
-        SubjectRenderer.renderStats(data);
-        Charts.renderBarChart('bar-chart', data);
-        
-        // Calculate distribution for doughnut
-        const dist = { 'Distinction': 0, 'Merit': 0, 'Pass': 0, 'Needs Support': 0 };
-        data.forEach(s => dist[s.band]++);
-        Charts.renderDoughnutChart('doughnut-chart', dist);
+        try {
+            const data = await DataLoader.loadSubjectData(subjectKey);
 
-        SubjectRenderer.renderTable(data);
-        SubjectRenderer.initTableInteractions();
+            SubjectRenderer.renderStats(data);
+            Charts.renderBarChart('bar-chart', data);
+
+            // Calculate distribution for doughnut
+            const dist = { 'Distinction': 0, 'Merit': 0, 'Pass': 0, 'Needs Support': 0 };
+            data.forEach(s => dist[s.band]++);
+            Charts.renderDoughnutChart('doughnut-chart', dist);
+
+            SubjectRenderer.renderTable(data);
+            SubjectRenderer.initTableInteractions();
+        } catch (error) {
+            console.error('Error loading subject data:', error);
+            document.getElementById('stats-dashboard').innerHTML = 
+                '<div class="stat-card"><h4>Error</h4><div class="value">Failed to load data</div></div>';
+        }
     }
 
     // Boot sequence
