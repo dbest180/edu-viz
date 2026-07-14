@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduViz - Subject Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subject.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <a href="index.html" class="back-link">← Back to Directory</a>
+        <h1 id="subject-title">Subject Details</h1>
+    </header>
+
+    <main class="subject-container">
+        <!-- Stats Dashboard -->
+        <section id="stats-dashboard" class="stats-grid">
+            <!-- Stats cards injected here -->
+        </section>
+
+        <!-- Charts -->
+        <section class="charts-grid">
+            <div class="chart-card">
+                <h3>Score Distribution</h3>
+                <canvas id="bar-chart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Performance Bands</h3>
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+        </section>
+
+        <!-- Student Table -->
+        <section class="table-section">
+            <div class="table-controls">
+                <h3>Student Results</h3>
+                <input type="text" id="table-search" placeholder="Filter table...">
+            </div>
+            <div class="table-wrapper">
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name ↕</th>
+                            <th data-sort="form_class">Form ↕</th>
+                            <th data-sort="score">Score ↕</th>
+                            <th data-sort="band">Band ↕</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Rows injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/data-loader.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/subject-renderer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

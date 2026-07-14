@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduViz - Student Directory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>EduViz Dashboard</h1>
+        <p class="subtitle">Global Student Directory</p>
+    </header>
+
+    <main class="landing-container">
+        <div class="search-wrapper">
+            <input type="text" id="student-search" placeholder="Search students by name or form class..." autocomplete="off">
+        </div>
+        
+        <div id="student-grid" class="student-grid">
+            <!-- Student cards injected here by JS -->
+        </div>
+    </main>
+
+    <script src="js/data-loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
