@@ -1,162 +1,162 @@
 [
     {
         "student_id": 1,
-        "name": "Zoe Smith",
-        "gender": "Female",
+        "name": "Liam Rodriguez",
+        "gender": "Male",
         "form_class": "9B",
         "score": 60,
         "band": "Merit"
     },
     {
         "student_id": 2,
-        "name": "Ava Williams",
+        "name": "James Brown",
         "gender": "Male",
-        "form_class": "9A",
-        "score": 68,
-        "band": "Merit"
+        "form_class": "11B",
+        "score": 55,
+        "band": "Pass"
     },
     {
         "student_id": 3,
-        "name": "Troy Miller",
+        "name": "Sebastian Wilson",
         "gender": "Male",
         "form_class": "9A",
-        "score": 82,
-        "band": "Distinction"
+        "score": 53,
+        "band": "Pass"
     },
     {
         "student_id": 4,
-        "name": "Sam Brown",
+        "name": "Oliver Miller",
         "gender": "Male",
-        "form_class": "9A",
-        "score": 55,
-        "band": "Pass"
+        "form_class": "9B",
+        "score": 87,
+        "band": "Distinction"
     },
     {
         "student_id": 5,
-        "name": "Joy Brown",
-        "gender": "Female",
-        "form_class": "9B",
-        "score": 63,
-        "band": "Merit"
+        "name": "Mason Miller",
+        "gender": "Male",
+        "form_class": "11B",
+        "score": 91,
+        "band": "Distinction"
     },
     {
         "student_id": 6,
-        "name": "Leo Martinez",
+        "name": "Amelia Anderson",
         "gender": "Female",
-        "form_class": "9A",
-        "score": 55,
-        "band": "Pass"
-    },
-    {
-        "student_id": 7,
-        "name": "Lily Miller",
-        "gender": "Female",
-        "form_class": "10A",
-        "score": 34,
-        "band": "Needs Support"
-    },
-    {
-        "student_id": 8,
-        "name": "Kai Brown",
-        "gender": "Female",
-        "form_class": "9A",
-        "score": 65,
-        "band": "Merit"
-    },
-    {
-        "student_id": 9,
-        "name": "Sam Miller",
-        "gender": "Male",
-        "form_class": "10A",
-        "score": 60,
-        "band": "Merit"
-    },
-    {
-        "student_id": 10,
-        "name": "Eva Martinez",
-        "gender": "Female",
-        "form_class": "9A",
-        "score": 58,
-        "band": "Pass"
-    },
-    {
-        "student_id": 11,
-        "name": "Leo Rodriguez",
-        "gender": "Male",
-        "form_class": "10B",
-        "score": 81,
-        "band": "Distinction"
-    },
-    {
-        "student_id": 12,
-        "name": "Sam Rodriguez",
-        "gender": "Female",
-        "form_class": "10A",
-        "score": 84,
-        "band": "Distinction"
-    },
-    {
-        "student_id": 13,
-        "name": "Troy Brown",
-        "gender": "Male",
-        "form_class": "9A",
-        "score": 41,
-        "band": "Pass"
-    },
-    {
-        "student_id": 14,
-        "name": "Ava Jones",
-        "gender": "Male",
-        "form_class": "9B",
-        "score": 59,
-        "band": "Pass"
-    },
-    {
-        "student_id": 15,
-        "name": "Zoe Miller",
-        "gender": "Female",
-        "form_class": "10B",
-        "score": 47,
-        "band": "Pass"
-    },
-    {
-        "student_id": 16,
-        "name": "Eva Williams",
-        "gender": "Female",
-        "form_class": "10A",
+        "form_class": "11A",
         "score": 74,
         "band": "Merit"
     },
     {
-        "student_id": 17,
-        "name": "Noah Jones",
-        "gender": "Male",
-        "form_class": "9B",
-        "score": 32,
-        "band": "Needs Support"
+        "student_id": 7,
+        "name": "Emma Garcia",
+        "gender": "Female",
+        "form_class": "11B",
+        "score": 70,
+        "band": "Merit"
     },
     {
-        "student_id": 18,
-        "name": "Joy Brown",
+        "student_id": 8,
+        "name": "Abigail Rodriguez",
+        "gender": "Female",
+        "form_class": "9B",
+        "score": 50,
+        "band": "Pass"
+    },
+    {
+        "student_id": 9,
+        "name": "Jack Brown",
         "gender": "Male",
-        "form_class": "10B",
-        "score": 100,
+        "form_class": "9A",
+        "score": 95,
         "band": "Distinction"
     },
     {
-        "student_id": 19,
-        "name": "Max Jones",
-        "gender": "Male",
+        "student_id": 10,
+        "name": "Isabella Lopez",
+        "gender": "Female",
         "form_class": "10A",
-        "score": 76,
+        "score": 78,
+        "band": "Merit"
+    },
+    {
+        "student_id": 11,
+        "name": "Olivia Anderson",
+        "gender": "Female",
+        "form_class": "11A",
+        "score": 43,
+        "band": "Pass"
+    },
+    {
+        "student_id": 12,
+        "name": "Alexander Williams",
+        "gender": "Male",
+        "form_class": "11A",
+        "score": 55,
+        "band": "Pass"
+    },
+    {
+        "student_id": 13,
+        "name": "Victoria Lopez",
+        "gender": "Female",
+        "form_class": "11A",
+        "score": 69,
+        "band": "Merit"
+    },
+    {
+        "student_id": 14,
+        "name": "Oliver Johnson",
+        "gender": "Male",
+        "form_class": "11B",
+        "score": 82,
+        "band": "Distinction"
+    },
+    {
+        "student_id": 15,
+        "name": "Theodore Williams",
+        "gender": "Male",
+        "form_class": "9B",
+        "score": 81,
+        "band": "Distinction"
+    },
+    {
+        "student_id": 16,
+        "name": "Alexander Rodriguez",
+        "gender": "Male",
+        "form_class": "10B",
+        "score": 50,
+        "band": "Pass"
+    },
+    {
+        "student_id": 17,
+        "name": "Mia Lopez",
+        "gender": "Female",
+        "form_class": "10A",
+        "score": 70,
+        "band": "Merit"
+    },
+    {
+        "student_id": 18,
+        "name": "Henry Williams",
+        "gender": "Male",
+        "form_class": "11A",
+        "score": 71,
+        "band": "Merit"
+    },
+    {
+        "student_id": 19,
+        "name": "Mason Davis",
+        "gender": "Male",
+        "form_class": "9B",
+        "score": 64,
         "band": "Merit"
     },
     {
         "student_id": 20,
-        "name": "Maya Brown",
-        "gender": "Male",
-        "form_class": "10A",
-        "score": 78,
-        "band": "Merit"
+        "name": "Elizabeth Rodriguez",
+        "gender": "Female",
+        "form_class": "11B",
+        "score": 46,
+        "band": "Pass"
     }
 ]
